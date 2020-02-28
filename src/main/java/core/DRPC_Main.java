@@ -26,9 +26,9 @@ public class DRPC_Main {
     public static Map<String,Integer> clientCllaIpInfo1 = new HashMap<>();
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        new Runla(new String[]{"test","testForServer"},30001);
+//      new Runla(new String[]{"test","testForServer"},30001);
 //
-        Thread.sleep(1000);
+//      Thread.sleep(1000);
 //
 //        //注解扫描，扫描所有带有指定注解的类,分成客户端，服务端存入集合
 //        RpcIntfaceScaner.fillData();
@@ -37,10 +37,10 @@ public class DRPC_Main {
 //        System.out.println(clientCllaIpInfo);;
         //为客户端生成代理，
 
-        BB o = (BB) ProxyFactory.get(BB.class);
-        String  cc = o.a(1);
-        System.out.println(o.a(2));
-        System.out.println(cc);
+//      BB o = (BB) ProxyFactory.get(BB.class);
+//      String  cc = o.a(1);
+//      System.out.println(o.a(2));
+//      System.out.println(cc);
     }
 
     public static void logo(){
