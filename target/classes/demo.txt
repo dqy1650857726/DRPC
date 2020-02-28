@@ -1,0 +1,34 @@
+客户端接口
+@rpc(host = "127.0.0.1",Type = "C",port = 30000)
+intface A{
+    int fun(int a);
+}
+A o = ProxyFactory.get(class)
+
+服务端接口
+@rpc(Type = "S",EntClassName = "实现类的全类名")
+intface A{
+    int fun(int a);
+}
+真正的实现类
+class Cls imp A{
+    int fun(int a){
+        /***
+            ...
+        **/
+        return ?;
+    }
+}
+
+配置:
+    new Runla(扫描哪些包,设置rpc监听端口)
+调用:
+    BB o = (BB) ProxyFactory.get(BB.class);
+    o.fun(parames ... )
+
+看完还不会用自杀
+
+ |////////  |`````.  |`````|  |`````
+ |      /   |.....|  |.....|  |
+ |     /    |   \    |        |
+ |/////     |    \   |        |......
