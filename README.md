@@ -54,7 +54,7 @@ import annotion.rpc;
 **/
 @rpc(host = "192.168.1.100", Type = "C",port=23333)
 public interface Test {
-    int get(String ip, int port);
+    int get(int a,String b,float c);
 }
 ```
 测试调用
