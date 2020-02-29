@@ -29,9 +29,7 @@ public class RemotCallTask{
      */
 
     public Object call() throws Exception {
-        System.out.println("******" + getIntfaceName(className));
         className = serverInfo.get(getIntfaceName(className));
-        System.out.println(className+"***************");
       //  System.out.println(className);
         Class aClass = Class.forName(className);
         Object obj = aClass.newInstance();
